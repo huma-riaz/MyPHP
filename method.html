@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+
+    <h3>GET METHOD :</h3>
+    <form method="get" action="./method.php">
+        <input type="text" name="user_name" placeholder="Your Name" /> <br/><br/>
+        <input type="text" name="user_age" placeholder="Your Age" />   <br/><br/>
+        <button type="submit">Login</button>
+    </form> <br>
+
+
+
+    <h3>POST METHOD :</h3>
+    <form method="post" action="./method.php">
+        <input type="text" name="user_class" placeholder="Your Class"> <br/><br/>
+        <input type="text" name="user_section" placeholder="Your Section"> <br/><br/>
+        <button> Sign Up</button>
+    </form> <br>
+
+
+
+    <h3>REQUEST METHOD :</h3>
+    <form method="post" action="./method.php">
+        <input type="text" name="user_name" placeholder="Name"> <br> <br>
+        <input type="text" name="user_class" placeholder="Class"><br> <br>
+        <input type="text" name="user_age" placeholder="Age"><br> <br>
+        <input type="text" name="user_section" placeholder="Section"> <br> <br>
+        <button type="submit"> Submit</button>
+    </form> <br>
+
+
+    <h3>FILE UPLOAD :</h3>
+    <form action="./method.php" method="post" enctype="multipart/form-data"> 
+        <input type="file" name="file_upload"> <br><br>
+        <button>Upload</button>
+    </form>
+
+
+    <h3>FORM HANDLING WITH PHP :</h3>
+    <form action="./form_handling.php" method="post">
+        <input type="text" name="name" placeholder="Your Name"> <br><br>
+        <input type="email" name="email" placeholder="Your Email"> <br><br>
+        <input type="password" name="password" placeholder="Your Password"> <br><br>
+        <input type="int" name="age" placeholder="Your Age"> <br><br>
+        <input type="checkbox" name="skills[]" value="HTML"><span>HTML</span> <br>
+        <input type="checkbox" name="skills[]" value="CSS"><span>CSS</span> <br>
+        <input type="checkbox" name="skills[]" value="BOOTSTRAP"><span>BOOTSTRAP</span> <br>
+        <input type="checkbox" name="skills[]" value="PHP"><span>PHP</span> <br> <br>
+        <input type="radio" name="gender" value="male"><span>Male</span> <br>
+        <input type="radio" name="gender" value="female"><span>Female</span> <br><br>
+        <select name="city">
+            <option>Select Your City</option> <br><br>
+            <option value="karachi">Karachi</option> <br><br>
+            <option value="karachi">Lahore</option> <br><br>
+            <option value="karachi">Quetta</option> <br><br>
+        </select> <br><br>
+        <textarea name="bio">TEXT: </textarea> <br><br>
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
